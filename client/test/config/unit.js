@@ -16,9 +16,13 @@ files = [
   'dist/templates/**/*.js'
 ];
 
+preprocessors = {
+    'src/**/*.js': 'coverage'
+};
+
 // use dots reporter, as travis terminal does not support escaping sequences
 // possible values: 'dots' || 'progress'
-reporters = 'progress';
+reporters = ['coverage'];
 
 // these are default values, just to show available options
 
